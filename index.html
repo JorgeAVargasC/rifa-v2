@@ -11,21 +11,22 @@
     <title>Rifa 2.0</title>
 </head>
 
-<body class="bg-black text-white">
+<body>
     <form class="m-3" action="">
 
         <div class="mb-3 d-flex justify-content-center">
             <img class="img-fluid w-50" src="static/img/logo.png" alt="logo">
         </div>
-        
+
         <div class="mb-3">
             <h2 class="text-center text-white display-6">¡Compra tus Cupos!</h2>
         </div>
-        
+
         <div class="mb-3">
-            <div class="card pt-2 pb-2 bg-gold d-flex flex-row justify-content-evenly text-black text-center">
+            <div
+                class="card clock-counter pt-2 pb-2 bg-gold d-flex flex-row align-items-center justify-content-evenly text-center">
                 <div class="time-interval-container d-flex-col">
-                    <h1 class="" id="dias">00</h1>
+                    <h1 id="dias">00</h1>
                     <h2 class="display-6">Dias</h2>
                 </div>
                 <div class="line"></div>
@@ -47,22 +48,22 @@
         </div>
 
         <div class="mb-3">
-            <label class="form-label" for="">Nombre Completo</label>
-            <input class="form-control bg-black border-secondary text-white" type="text" placeholder="Nombre" name="buyerFullName" required />
+            <label class="form-label" for="">Nombre Completo <span> *</span></label>
+            <input class="form-control" type="text" placeholder="Nombre" name="buyerFullName" required />
         </div>
         <div class="mb-3">
-            <label class="form-label" for="">Número de Identificación</label>
-            <input class="form-control bg-black border-secondary text-white" type="text" placeholder="1060400300" onkeypress="return onlyNumberKey(event)"
+            <label class="form-label" for="">Número de Identificación <span> *</span></label>
+            <input class="form-control" type="text" placeholder="1060400300" onkeypress="return onlyNumberKey(event)"
                 name="payerDocument" required />
         </div>
         <div class="mb-3">
-            <label class="form-label" for="">Celular</label>
-            <input class="form-control bg-black border-secondary text-white" id="inpCelular" type="tel" placeholder="3101234567" maxlength="12"
+            <label class="form-label" for="">Celular <span> *</span></label>
+            <input class="form-control" id="inpCelular" type="tel" placeholder="3101234567" maxlength="12"
                 name="mobilePhone" required />
         </div>
         <div class="mb-3">
-            <label class="form-label" for="">Correo Electrónico</label>
-            <input class="form-control bg-black border-secondary text-white" type="email" placeholder="ejemplo@gmail.com" name="buyerEmail" required />
+            <label class="form-label" for="">Correo Electrónico <span> *</span></label>
+            <input class="form-control" type="email" placeholder="ejemplo@gmail.com" name="buyerEmail" required />
         </div>
 
     </form>
