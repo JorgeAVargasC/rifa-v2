@@ -1,0 +1,15 @@
+:root {
+	--gold-1: #95702c;
+	--gold-2: #f8dd57;
+    --gray-1: #9a989a;
+    --gray-2: #c4c4c4;
+	
+
+    --gold-gradient: linear-gradient(var(--gold-1), var(--gold-2), var(--gold-1));
+	--silver-gradient: linear-gradient(var(--gray-1), var(--gray-2), var(--gray-1));
+}
+
+.bg-gold{
+    background: var(--gold-gradient);
+}
+
