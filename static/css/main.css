@@ -86,3 +86,48 @@ body {
 .form-label span{
     color: var(--gold-2);
 }
+
+/* MODAL BOOTSTRAP */
+
+.modal-content{
+    background-color: var(--dark);
+}
+
+/* TICEKT */
+
+.tickets-grid-container {
+	width: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1rem;
+	justify-items: center;
+}
+
+.ticket {
+	width: auto;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition-duration: 0.1s;
+}
+
+.ticket h1:not(.ticket-popup-number) {
+	color: var(--dark);
+	position: absolute;
+	font-size: 1.4rem;
+	z-index: 1;
+    margin-bottom: 0;
+}
+
+.ticket input {
+	width: 6rem;
+	height: 4rem;
+	position: absolute;
+	opacity: 0;
+	z-index: 2;
+}
+
+.ticket input:hover {
+	cursor: pointer;
+}
